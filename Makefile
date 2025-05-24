@@ -2,11 +2,13 @@
 CC = gcc
 CFLAGS = -Wall -Isrc # -Wall enables all warnings, -Isrc to find headers in src/
 
-# Linker flags - for specifying library paths
-LDFLAGS = # e.g., -L/usr/local/lib or -L/path/to/libimobiledevice/lib
+# Linker flags - for specifying library paths.
+# Add -L/your/custom/lib/path here if your libraries are not in standard system locations.
+LDFLAGS = 
 
-# Libraries to link against
-LIBS = # e.g., -limobiledevice-1.0 -lusbmuxd # Placeholder for libimobiledevice and libusbmuxd
+# Libraries to link against.
+# Adjust library names/versions if compilation/linking fails (e.g., -limobiledevice-1.0 or -limobiledevice, -lusbmuxd or -lusbmuxd-2.0).
+LIBS = -limobiledevice-1.0 -lusbmuxd
 
 # Name of the executable
 TARGET = ideviceerase
