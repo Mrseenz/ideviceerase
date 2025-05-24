@@ -6,7 +6,7 @@ CFLAGS = -Wall -Isrc # -Wall enables all warnings, -Isrc to find headers in src/
 LDFLAGS = # e.g., -L/usr/local/lib or -L/path/to/libimobiledevice/lib
 
 # Libraries to link against
-LIBS = # e.g., -limobiledevice-1.0 -lusbmuxd # Placeholder for libimobiledevice and libusbmuxd
+LIBS = -limobiledevice-1.0 -lplist-2.0 -lusbmuxd-2.0
 
 # Name of the executable
 TARGET = ideviceerase
